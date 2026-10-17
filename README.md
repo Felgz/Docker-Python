@@ -60,7 +60,7 @@ Puedes revisar y ajustar los valores en `.env` si lo necesitas.
 python3 app.py
 ```
 
-Abre [http://localhost:5000](http://localhost:5000). Verás "No hay alumnos
+Abre [http://localhost:5001](http://localhost:5001). Verás "No hay alumnos
 registrados." porque todavía no hay ninguna base de datos disponible — y no
 un error 500, que es justo el comportamiento esperado en este punto.
 
@@ -78,7 +78,7 @@ Esto crea el contenedor de PostgreSQL, carga los datos iniciales de
 esa base de datos. Fíjate que en `docker-compose.yml` las mismas variables
 (`DB_HOST`, `DB_USER`, etc.) se definen directamente ahí en vez de en un
 `.env` — es Docker Compose quien se las entrega al contenedor. Ahora en
-[http://localhost:5000](http://localhost:5000) sí se verá el listado de
+[http://localhost:5002](http://localhost:5002) sí se verá el listado de
 alumnos.
 
 Para detener y eliminar los contenedores:
